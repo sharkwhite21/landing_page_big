@@ -1,0 +1,279 @@
+header {
+  background-color: black;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
+header section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 70%;
+  height: 80px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header section .logo {
+  width: 235px;
+  padding-bottom: 20px;
+  margin-top: 9px;
+  border-bottom: 4px solid #c2a278;
+}
+
+header section nav {
+  border-bottom: 0.5px solid;
+  border-color: #f9f6f2;
+  height: 55px;
+}
+
+header section nav .menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header section nav .menu ul {
+  margin: 0%;
+  height: 100%;
+}
+
+header section nav .menu ul li {
+  list-style: none;
+  display: inline-block;
+  margin-left: 20px;
+  height: 100%;
+}
+
+header section nav .menu ul li:hover {
+  color: #c2a278;
+}
+
+header section nav .menu ul li a {
+  text-decoration: none;
+  color: white;
+  height: 54px;
+}
+
+header section nav .menu ul li a img {
+  width: 20px;
+  height: 20px;
+}
+
+header section nav .menu ul li a:hover {
+  background: unset;
+  color: #c2a278;
+  text-decoration: underline;
+}
+
+header section nav input {
+  display: none;
+}
+
+header section nav span {
+  display: none;
+}
+
+main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
+main .parte-superior-izq {
+  background-color: black;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 15px 15%;
+}
+
+main .parte-superior-izq .texto-ubicacion {
+  border-left: 2px solid white;
+  height: 40px;
+}
+
+main .parte-superior-izq .texto-ubicacion p {
+  padding-left: 30px;
+}
+
+main .parte-superior-izq img {
+  padding-left: 30px;
+  width: 245px;
+  padding-bottom: 10px;
+  border-bottom: 0.9px dashed white;
+}
+
+main .parte-superior-izq .texto-corto {
+  border-right: 0.1px solid white;
+  width: 100%;
+}
+
+main .parte-superior-izq .texto-corto p {
+  width: 275px;
+  padding: 15px;
+}
+
+main .imagenes-centrales {
+  padding: 0% 15%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+main .imagenes-centrales .contenedor-imagenes {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 880px;
+}
+
+main .imagenes-centrales .contenedor-imagenes .imagen-fondo {
+  position: absolute;
+  top: 38%;
+  width: 785px;
+}
+
+main .imagenes-centrales .contenedor-imagenes .maniqui {
+  z-index: 2;
+  position: absolute;
+  padding-right: 60px;
+}
+
+main .imagenes-centrales .contenedor-imagenes .letras-portada {
+  z-index: 3;
+  position: relative;
+  width: 1185px;
+  padding-bottom: 270px;
+  padding-left: 20px;
+}
+
+main .imagenes-centrales h2 {
+  color: gray;
+  padding: 3% 8%;
+}
+
+main .seccion-informacion {
+  background: url("/Assets/bg-asset-2.png");
+  background-size: contain;
+  height: 320px;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 3% 11%;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+main .seccion-informacion p {
+  width: 250px;
+  font-size: 14px;
+}
+
+main .seccion-recordatorios {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0% 15%;
+  height: 210px;
+}
+
+main .seccion-recordatorios img {
+  position: relative;
+  width: 340px;
+  height: 455px;
+  top: -200px;
+  margin-left: 6%;
+}
+
+main .seccion-recordatorios div {
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  margin-left: 75px;
+  width: 300px;
+}
+
+main .formulario-suscripcion {
+  margin: 5% 15% 2%;
+}
+
+main .formulario-suscripcion form input[type="text"], main .formulario-suscripcion form textarea, main .formulario-suscripcion form #inputState {
+  border-radius: 0%;
+  background-color: #d1d1d1;
+}
+
+main .formulario-suscripcion form button {
+  background-color: #f0c891;
+  border-color: #f0c891;
+  border-radius: 0%;
+}
+
+footer div {
+  margin: 0% 15%;
+  background-color: black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  height: 90px;
+}
+
+footer div h5 {
+  color: white;
+  padding: 5%;
+}
+
+* {
+  padding: 0%;
+  margin: 0%;
+  border: 0;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+/*# sourceMappingURL=style.css.map */
