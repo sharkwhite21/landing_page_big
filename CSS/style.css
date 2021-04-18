@@ -16,7 +16,7 @@ header section {
   display: -ms-flexbox;
   display: flex;
   width: 70%;
-  height: 80px;
+  height: 95px;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -30,8 +30,6 @@ header section .logo {
 }
 
 header section nav {
-  border-bottom: 0.5px solid;
-  border-color: #f9f6f2;
   height: 55px;
 }
 
@@ -48,6 +46,10 @@ header section nav .menu {
 header section nav .menu ul {
   margin: 0%;
   height: 100%;
+  border-bottom: 0.5px solid  #f9f6f2;
+  /*&:hover{
+                        border-color: black;
+                    }*/
 }
 
 header section nav .menu ul li {
@@ -55,9 +57,15 @@ header section nav .menu ul li {
   display: inline-block;
   margin-left: 20px;
   height: 100%;
+  cursor: pointer;
 }
 
 header section nav .menu ul li:hover {
+  margin-bottom: 5px;
+  border-bottom: 2px solid  #c2a278;
+}
+
+header section nav .menu ul li:hover a {
   color: #c2a278;
 }
 
@@ -74,8 +82,6 @@ header section nav .menu ul li a img {
 
 header section nav .menu ul li a:hover {
   background: unset;
-  color: #c2a278;
-  text-decoration: underline;
 }
 
 header section nav input {
@@ -114,7 +120,7 @@ main .parte-superior-izq {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  padding: 15px 15%;
+  padding: 5px 15%;
 }
 
 main .parte-superior-izq .texto-ubicacion {
@@ -123,24 +129,38 @@ main .parte-superior-izq .texto-ubicacion {
 }
 
 main .parte-superior-izq .texto-ubicacion p {
-  padding-left: 30px;
+  padding-left: 25px;
+  font-size: 13px;
 }
 
-main .parte-superior-izq img {
-  padding-left: 30px;
-  width: 245px;
-  padding-bottom: 10px;
+main .parte-superior-izq .contenedor-imagen-logo {
+  height: 55px;
+  width: 300px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   border-bottom: 0.9px dashed white;
+}
+
+main .parte-superior-izq .contenedor-imagen-logo img {
+  width: 245px;
+  height: 30px;
 }
 
 main .parte-superior-izq .texto-corto {
   border-right: 0.1px solid white;
   width: 100%;
+  height: 100px;
+  margin-bottom: 25px;
 }
 
 main .parte-superior-izq .texto-corto p {
   width: 275px;
   padding: 15px;
+  font-size: 14px;
 }
 
 main .imagenes-centrales {
@@ -169,7 +189,7 @@ main .imagenes-centrales .contenedor-imagenes {
 
 main .imagenes-centrales .contenedor-imagenes .imagen-fondo {
   position: absolute;
-  top: 38%;
+  top: 31%;
   width: 785px;
 }
 
@@ -214,35 +234,45 @@ main .seccion-recordatorios {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin: 0% 15%;
-  height: 210px;
+  margin: 0% 15% 90px;
+  height: 300px;
 }
 
 main .seccion-recordatorios img {
   position: relative;
-  width: 340px;
-  height: 455px;
-  top: -200px;
-  margin-left: 6%;
+  width: 370px;
+  height: 500px;
+  top: -170px;
+  margin-left: 4%;
 }
 
 main .seccion-recordatorios div {
-  -ms-flex-item-align: end;
-      align-self: flex-end;
   margin-left: 75px;
+  margin-top: 85px;
   width: 300px;
 }
 
 main .formulario-suscripcion {
-  margin: 5% 15% 2%;
+  border-top: 1px solid  #c2a278;
 }
 
-main .formulario-suscripcion form input[type="text"], main .formulario-suscripcion form textarea, main .formulario-suscripcion form #inputState {
+main .formulario-suscripcion .contenedor-formulario {
+  margin: 0% 15% 2%;
+}
+
+main .formulario-suscripcion .contenedor-formulario h2 {
+  position: relative;
+  top: -20px;
+  border-right: 2px solid  black;
+  width: 600px;
+}
+
+main .formulario-suscripcion .contenedor-formulario form input[type="text"], main .formulario-suscripcion .contenedor-formulario form textarea, main .formulario-suscripcion .contenedor-formulario form #inputState {
   border-radius: 0%;
   background-color: #d1d1d1;
 }
 
-main .formulario-suscripcion form button {
+main .formulario-suscripcion .contenedor-formulario form button {
   background-color: #f0c891;
   border-color: #f0c891;
   border-radius: 0%;

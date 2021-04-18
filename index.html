@@ -37,7 +37,9 @@
             <div class="texto-ubicacion">
                 <p >Inicio / Productos</p>
             </div> 
-            <img src="Assets\bgtext.png" alt="">
+            <div class="contenedor-imagen-logo">
+                <img src="Assets\bgtext.png" alt="">
+            </div>
             <div class="texto-corto">
                 <P>Lorem ipsum dolor sit amet, consectetur adipisicing elit. sed do eiusmod tempor incidindunt ut labore el dolore magna aliqua.</P>
             </div>
@@ -58,50 +60,52 @@
             <img src="Assets\asset-2.png" alt="">
             <div>
                 <h2>LOREM IPSUM DOLOR SIT AMET</h2>
-                <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis possimus maiores nihil maxime porro nulla, aut adipisci eaque odio soluta. Iure neque qui iusto earum explicabo sequi iste quasi excepturi.</P>
+                <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis possimus maiores nihil maxime porro nulla, aut adipisci eaque odio soluta.</P>
             </div>
         </section>
         <section class="formulario-suscripcion">
-            <h2>SUSCRIBETE A NUESTRO NEWSLETTER</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt excepturi debitis eligendi ipsa culpa pariatur, aspernatur, consequuntur aliquam laborum, quia dolorum non obcaecati vero labore sequi enim quidem itaque esse.</p>
-            <form class="row g-3" >
-                <div class="row g-3">
-                    <div class="col-md-6 ">
-                      <input type="text" class="form-control" placeholder="NOMBRE:" aria-label="NOMBRE:">
+            <div class="contenedor-formulario">
+                <h2>SUSCRIBETE A NUESTRO NEWSLETTER</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt excepturi debitis eligendi ipsa culpa pariatur, aspernatur.</p>
+                <form class="row g-3" >
+                    <div class="row g-3">
+                        <div class="col-md-6 ">
+                          <input type="text" class="form-control" placeholder="NOMBRE:" aria-label="NOMBRE:">
+                        </div>
+                        <div class="col-md-6">
+                          <input type="text" class="form-control" placeholder="CORREO ELECTRONICO:" aria-label="CORREO ELECTRONICO:">
+                        </div>
                     </div>
-                    <div class="col-md-6">
-                      <input type="text" class="form-control" placeholder="CORREO ELECTRONICO:" aria-label="CORREO ELECTRONICO:">
+                    <div class="row g-3">
+                        <div class="col-md-6">
+                            <select id="inputState" class="form-select">
+                                <option selected>TIPO DE DOCUMENTO:</option>
+                                <option value="CC">CEDULA DE CIUDADANIA</option>
+                                <option value="CE">CEDULA DE EXTRANJERIA</option>
+                                <option value="TI">TARJETA DE IDENTIDAD</option>
+                                <option value="PS">PASAPORTE</option>
+                            </select>
+                        </div>
+                        <div class="col-md-6">
+                          <input type="text" class="form-control" placeholder="NUMERO DE DOCUMENTO:" aria-label="NUMERO DE DOCUMENTO:">
+                        </div>
                     </div>
-                </div>
-                <div class="row g-3">
-                    <div class="col-md-6">
-                        <select id="inputState" class="form-select">
-                            <option selected>TIPO DE DOCUMENTO:</option>
-                            <option value="CC">CEDULA DE CIUDADANIA</option>
-                            <option value="CE">CEDULA DE EXTRANJERIA</option>
-                            <option value="TI">TARJETA DE IDENTIDAD</option>
-                            <option value="PS">PASAPORTE</option>
-                        </select>
+                    <div class="row g-3">
+                        <div class="col-md-6">
+                          <input type="text" class="form-control" placeholder="TELEFONO" aria-label="TELEFONO">
+                        </div>
+                        <div class="col">
+                            <div class="form-check ">
+                                <input class="form-check-input" type="checkbox" id="inlineFormCheck">
+                                <label class="form-check-label" for="inlineFormCheck">
+                                  <a href="#">Acepto terminos y condiciones</a>
+                                </label>
+                                <button type="submit" class="btn btn-primary mb">SUSCRIBIRME</button>
+                              </div>
+                        </div>
                     </div>
-                    <div class="col-md-6">
-                      <input type="text" class="form-control" placeholder="NUMERO DE DOCUMENTO:" aria-label="NUMERO DE DOCUMENTO:">
-                    </div>
-                </div>
-                <div class="row g-3">
-                    <div class="col-md-6">
-                      <input type="text" class="form-control" placeholder="TELEFONO" aria-label="TELEFONO">
-                    </div>
-                    <div class="col">
-                        <div class="form-check ">
-                            <input class="form-check-input" type="checkbox" id="inlineFormCheck">
-                            <label class="form-check-label" for="inlineFormCheck">
-                              <a href="#">Acepto terminos y condiciones</a>
-                            </label>
-                            <button type="submit" class="btn btn-primary mb">SUSCRIBIRME</button>
-                          </div>
-                    </div>
-                </div>
-            </form>
+                </form>
+            </div>
         </section>
     </main>
     <footer>
