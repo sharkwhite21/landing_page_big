@@ -47,9 +47,6 @@ header section nav .menu ul {
   margin: 0%;
   height: 100%;
   border-bottom: 0.5px solid  #f9f6f2;
-  /*&:hover{
-                        border-color: black;
-                    }*/
 }
 
 header section nav .menu ul li {
@@ -90,6 +87,137 @@ header section nav input {
 
 header section nav span {
   display: none;
+}
+
+@media screen and (max-width: 1000px) {
+  header {
+    width: 100%;
+    height: 70px;
+    top: 0px;
+    padding: 10px 4%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  header .logo {
+    height: initial;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  header nav {
+    float: right;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  header nav .menu {
+    padding-top: 3px;
+    display: none;
+    /*checkbox transparente y en primer plano*/
+    /*span -lineas del menu hamburguesa-*/
+  }
+  header nav .menu ul {
+    /*posicion absolute para que se posicione debajo del 
+                     resto del header - top medida del header*/
+    width: 100%;
+    position: absolute;
+    top: 70px;
+    right: 0;
+    overflow: hidden;
+    list-style: none;
+    background: #f2f2f2;
+    height: 0px;
+    -webkit-transition: height 0.5s ease;
+    transition: height 0.5s ease;
+    display: none;
+  }
+  header nav .menu ul li {
+    position: relative;
+    background: black;
+  }
+  header nav .menu ul li img {
+    display: none;
+  }
+  header nav .menu ul li img.arrow-down {
+    display: none;
+  }
+  header nav .menu ul li a {
+    position: relative;
+    text-decoration: none;
+    color: white;
+    padding: 16px 5%;
+    display: block;
+  }
+  header nav .menu input[type="checkbox"]:checked ~ ul {
+    height: 200px;
+    transition: height 0.5s ease-in-out;
+    -moz-transition: height 0.5s ease-in-out;
+    -o-transition: height 0.5s ease-in-out;
+    -webkit-transition: height 0.5s ease-in-out;
+    z-index: 2;
+    display: none;
+  }
+  header nav .menu input {
+    display: block;
+    width: 40px;
+    height: 32px;
+    opacity: 0;
+    z-index: 2;
+    position: absolute;
+  }
+  header nav .menu input:checked ~ span {
+    opacity: 1;
+    -webkit-transform: rotate(45deg) translate(2px, 1px);
+            transform: rotate(45deg) translate(2px, 1px);
+  }
+  header nav .menu input:checked ~ span:nth-last-child(3) {
+    opacity: 0;
+    -webkit-transform: rotate(0deg) scale(0.2, 0.2);
+            transform: rotate(0deg) scale(0.2, 0.2);
+  }
+  header nav .menu input:checked ~ span:nth-last-child(2) {
+    -webkit-transform: rotate(-45deg) translate(1px, 0px);
+            transform: rotate(-45deg) translate(1px, 0px);
+  }
+  header nav .menu span {
+    display: block;
+    width: 25px;
+    height: 2.5px;
+    margin-bottom: 6.5px;
+    position: relative;
+    background: white;
+    z-index: 1;
+    -webkit-transform-origin: 3px 0px;
+            transform-origin: 3px 0px;
+    -webkit-transition: opacity 0.55s ease,-webkit-transform 0.5s ease;
+    transition: opacity 0.55s ease,-webkit-transform 0.5s ease;
+    transition: transform 0.5s ease,opacity 0.55s ease;
+    transition: transform 0.5s ease,opacity 0.55s ease,-webkit-transform 0.5s ease;
+  }
+  header nav .menu span:first-child {
+    -webkit-transform-origin: 0% 0%;
+            transform-origin: 0% 0%;
+  }
+  header nav .menu span:nth-last-child(2) {
+    -webkit-transform-origin: 0% 100%;
+            transform-origin: 0% 100%;
+  }
 }
 
 main {
@@ -278,6 +406,60 @@ main .formulario-suscripcion .contenedor-formulario form button {
   border-radius: 0%;
 }
 
+@media screen and (max-width: 1000px) {
+  main .parte-superior-izq {
+    padding: 0%;
+    padding-left: 15px;
+  }
+  main .parte-superior-izq .texto-corto p {
+    width: 155px;
+    font-size: 11px;
+  }
+  main .imagenes-centrales .contenedor-imagenes {
+    height: 320px;
+  }
+  main .imagenes-centrales .contenedor-imagenes .imagen-fondo {
+    width: 80%;
+    height: 60%;
+    top: 35%;
+  }
+  main .imagenes-centrales .contenedor-imagenes .maniqui {
+    width: 23%;
+    padding: 0px;
+    top: 47%;
+  }
+  main .imagenes-centrales .contenedor-imagenes .letras-portada {
+    width: 330px;
+    padding: 0px;
+  }
+  main .seccion-recordatorios {
+    margin: 0px;
+  }
+  main .seccion-recordatorios img {
+    width: 165px;
+    height: 240px;
+    top: -45%;
+  }
+  main .seccion-recordatorios div {
+    margin: 55px 0px 0px;
+  }
+  main .seccion-recordatorios div h2 {
+    font-size: 14px;
+  }
+  main .seccion-recordatorios div p {
+    font-size: 12px;
+  }
+  main .seccion-informacion p {
+    width: 180px;
+    font-size: 13px;
+  }
+  main .formulario-suscripcion .contenedor-formulario h2 {
+    width: 260px;
+    font-size: 14px;
+    top: -10px;
+  }
+}
+
 footer div {
   margin: 0% 15%;
   background-color: black;
@@ -296,6 +478,20 @@ footer div {
 footer div h5 {
   color: white;
   padding: 5%;
+}
+
+@media screen and (max-width: 1000px) {
+  footer {
+    margin: 0px;
+  }
+  footer h5 {
+    color: white;
+    padding: 5%;
+    font-size: 11px;
+  }
+  footer p {
+    font-size: 10px;
+  }
 }
 
 * {

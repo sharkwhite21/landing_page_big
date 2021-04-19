@@ -1,40 +1,35 @@
 main{
     display: flex;
     flex-direction: column;
-    //width: 70%;
     justify-content: center;
     align-content: center;
     .parte-superior-izq{
-         background-color: black;
-         color: white;
-         display: flex;
-         align-items: start;
-         flex-direction: column;
-         padding: 5px 15%;
-         .texto-ubicacion{
+        background-color: black;
+        color: white;
+        display: flex;
+        align-items: start;
+        flex-direction: column;
+        padding: 5px 15%;
+        .texto-ubicacion{
             border-left: 2px solid white;
             height: 40px;
             p{
                 padding-left: 25px;
                 font-size: 13px;
             }
-         }
-         .contenedor-imagen-logo{
+        }
+        .contenedor-imagen-logo{
             height: 55px;
             width: 300px;
-             display: flex;
-            // align-items: center;
-             justify-content: center;
-             border-bottom: 0.9px dashed white;
-             img{
-                 //padding-top: 30px;
-                 width: 245px;
-                 height: 30px;
-                 //padding-bottom: 10px;
-                 //border-left: 0.1px solid white;
-             }
-             
-         }
+            display: flex;
+            justify-content: center;
+            border-bottom: 0.9px dashed white;
+            img{
+                width: 245px;
+                height: 30px;;
+            }
+            
+        }
         .texto-corto{
             border-right: 0.1px solid white;
             width: 100%;
@@ -61,8 +56,6 @@ main{
                 position: absolute;
                 top: 31%;
                 width: 785px;
-                
-               //margin-left: 60px;
             }
             .maniqui{
                 z-index: 2;
@@ -95,7 +88,6 @@ main{
         justify-content: space-around;
         p{
             width: 250px;
-            //padding-left: 5%;
             font-size: 14px;
         }
     }
@@ -103,19 +95,15 @@ main{
         display: flex;
         margin: 0% 15% 90px;
         height: 300px;
-        //justify-content: space-between;
         img{
             position: relative;
             width: 370px;
             height: 500px;
             top: -170px;
             margin-left: 4%;
-           // box-shadow: 8px 8px 10px 5px;
         }
         div{
-           // align-self: flex-end;
             margin-left: 75px;
-            //height: 60px;
             margin-top: 85px;
             width: 300px;
         }
@@ -132,17 +120,83 @@ main{
                 width:600px;
             }
             form{
-                //display: flex;
                 input[type="text"], textarea,#inputState {
                     border-radius: 0%;
                     background-color : #d1d1d1;             
-                  }
-                  button{
-                      background-color: #f0c891;
-                      border-color: #f0c891;
-                      border-radius: 0%;
-                  }
+                }
+                button{
+                    background-color: #f0c891;
+                    border-color: #f0c891;
+                    border-radius: 0%;
+                }
             }
         }
+    }
+    @media screen and (max-width: 1000px){
+       .parte-superior-izq{
+        padding: 0%;
+        padding-left: 15px;
+        .texto-corto{
+            p{
+                width: 155px;
+                font-size: 11px;
+            }
+        }
+       }
+       
+       .imagenes-centrales{
+           .contenedor-imagenes{
+               height: 320px;
+               .imagen-fondo{
+                    width: 80%;
+                    height: 60%;
+                    top: 35%;
+               }
+               .maniqui{
+                   width: 23%;
+                   padding: 0px;
+                   top: 47%;
+               }
+               .letras-portada{
+                    width: 330px;
+                    padding: 0px;
+               }
+           }
+       }
+
+       .seccion-recordatorios{
+           margin: 0px;
+           img{
+                width: 165px;
+                height: 240px;
+                top: -45%;
+           }
+           div{
+               margin: 55px 0px 0px;
+               h2{
+                   font-size: 14px;
+               }
+               p{
+                   font-size: 12px;
+               }
+           }
+       }
+
+       .seccion-informacion{
+           p{
+               width: 180px;
+               font-size: 13px;
+           }
+       }
+
+       .formulario-suscripcion{
+           .contenedor-formulario{
+               h2{
+                   width: 260px;
+                   font-size: 14px;
+                   top: -10px;
+                }
+            }
+       }
     }
 }

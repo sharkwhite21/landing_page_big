@@ -11,4 +11,16 @@ footer{
             padding: 5%;
         }
     }
+
+    @media screen and (max-width: 1000px){
+        margin: 0px;
+        h5{
+            color: white;
+            padding: 5%;
+            font-size: 11px;
+        }
+        p{
+            font-size: 10px;
+        }
+    }
 }
