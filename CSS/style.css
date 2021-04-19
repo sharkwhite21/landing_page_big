@@ -1,140 +1,157 @@
 header {
-  background-color: black;
-  color: white;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  padding: 0% 15%;
+  height: 95px;
+  background-color: black;
+  color: white;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header .logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  height: 100%;
+  border-bottom: 4px solid #c2a278;
+  width: 25%;
+}
+
+header nav {
+  width: 75%;
+  border-bottom: 1px solid #c3c3c3;
+}
+
+header nav .menu {
+  margin-left: 3%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -ms-flex-line-pack: center;
       align-content: center;
+  height: 91px;
 }
 
-header section {
+header nav .menu .nav-items {
+  width: 82%;
+}
+
+header nav .menu .nav-items-redes {
+  width: 18%;
+}
+
+header nav .menu ul {
+  margin-bottom: 0px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 70%;
-  height: 95px;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
-header section .logo {
-  width: 235px;
-  padding-bottom: 20px;
-  margin-top: 9px;
-  border-bottom: 4px solid #c2a278;
-}
-
-header section nav {
-  height: 55px;
-}
-
-header section nav .menu {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  height: 100%;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-header section nav .menu ul {
-  margin: 0%;
-  height: 100%;
-  border-bottom: 0.5px solid  #f9f6f2;
-}
-
-header section nav .menu ul li {
+header nav .menu ul li {
   list-style: none;
-  display: inline-block;
-  margin-left: 20px;
-  height: 100%;
   cursor: pointer;
 }
 
-header section nav .menu ul li:hover {
-  margin-bottom: 5px;
+header nav .menu ul li:hover {
+  height: 95px;
+  padding-bottom: 3px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
   border-bottom: 2px solid  #c2a278;
 }
 
-header section nav .menu ul li:hover a {
+header nav .menu ul li:hover a {
   color: #c2a278;
 }
 
-header section nav .menu ul li a {
+header nav .menu ul li a {
   text-decoration: none;
   color: white;
   height: 54px;
 }
 
-header section nav .menu ul li a img {
+header nav .menu ul li a img {
   width: 20px;
   height: 20px;
 }
 
-header section nav .menu ul li a:hover {
+header nav .menu ul li a:hover {
   background: unset;
 }
 
-header section nav input {
+header nav input {
   display: none;
 }
 
-header section nav span {
+header nav span {
   display: none;
 }
 
 @media screen and (max-width: 1000px) {
   header {
-    width: 100%;
-    height: 70px;
-    top: 0px;
-    padding: 10px 4%;
+    padding: 0% 5%;
+  }
+  header .logo {
+    width: 50%;
+  }
+  header .logo img {
+    width: 130px;
+  }
+  header nav {
+    width: 50%;
+    border-bottom: none;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    /*span -lineas del menu hamburguesa-*/
   }
-  header .logo {
-    height: initial;
+  header nav .menu {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
-  header nav {
-    float: right;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
-  header nav .menu {
-    padding-top: 3px;
-    display: none;
-    /*checkbox transparente y en primer plano*/
-    /*span -lineas del menu hamburguesa-*/
   }
   header nav .menu ul {
-    /*posicion absolute para que se posicione debajo del 
-                     resto del header - top medida del header*/
     width: 100%;
     position: absolute;
     top: 70px;
@@ -145,17 +162,16 @@ header section nav span {
     height: 0px;
     -webkit-transition: height 0.5s ease;
     transition: height 0.5s ease;
-    display: none;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding-left: 0px;
   }
   header nav .menu ul li {
     position: relative;
     background: black;
-  }
-  header nav .menu ul li img {
-    display: none;
-  }
-  header nav .menu ul li img.arrow-down {
-    display: none;
+    width: 100%;
   }
   header nav .menu ul li a {
     position: relative;
@@ -164,16 +180,21 @@ header section nav span {
     padding: 16px 5%;
     display: block;
   }
-  header nav .menu input[type="checkbox"]:checked ~ ul {
-    height: 200px;
+  header nav .menu .nav-items {
+    width: 100%;
+  }
+  header nav .menu .nav-items-redes {
+    display: none;
+  }
+  header nav input[type="checkbox"]:checked ~ ul {
+    height: 215px;
     transition: height 0.5s ease-in-out;
     -moz-transition: height 0.5s ease-in-out;
     -o-transition: height 0.5s ease-in-out;
     -webkit-transition: height 0.5s ease-in-out;
     z-index: 2;
-    display: none;
   }
-  header nav .menu input {
+  header nav input {
     display: block;
     width: 40px;
     height: 32px;
@@ -181,21 +202,21 @@ header section nav span {
     z-index: 2;
     position: absolute;
   }
-  header nav .menu input:checked ~ span {
+  header nav input:checked ~ #span-1 {
     opacity: 1;
-    -webkit-transform: rotate(45deg) translate(2px, 1px);
-            transform: rotate(45deg) translate(2px, 1px);
+    -webkit-transform: rotate(45deg) translate(-2px, 1px);
+            transform: rotate(45deg) translate(-2px, 1px);
   }
-  header nav .menu input:checked ~ span:nth-last-child(3) {
+  header nav input:checked ~ #span-3 {
     opacity: 0;
     -webkit-transform: rotate(0deg) scale(0.2, 0.2);
             transform: rotate(0deg) scale(0.2, 0.2);
   }
-  header nav .menu input:checked ~ span:nth-last-child(2) {
-    -webkit-transform: rotate(-45deg) translate(1px, 0px);
-            transform: rotate(-45deg) translate(1px, 0px);
+  header nav input:checked ~ #span-2 {
+    -webkit-transform: rotate(-45deg) translate(-5px, 0px);
+            transform: rotate(-45deg) translate(-5px, 0px);
   }
-  header nav .menu span {
+  header nav span {
     display: block;
     width: 25px;
     height: 2.5px;
@@ -210,11 +231,11 @@ header section nav span {
     transition: transform 0.5s ease,opacity 0.55s ease;
     transition: transform 0.5s ease,opacity 0.55s ease,-webkit-transform 0.5s ease;
   }
-  header nav .menu span:first-child {
+  header nav span:first-child {
     -webkit-transform-origin: 0% 0%;
             transform-origin: 0% 0%;
   }
-  header nav .menu span:nth-last-child(2) {
+  header nav span:nth-last-child(2) {
     -webkit-transform-origin: 0% 100%;
             transform-origin: 0% 100%;
   }
@@ -448,6 +469,9 @@ main .formulario-suscripcion .contenedor-formulario form button {
   }
   main .seccion-recordatorios div p {
     font-size: 12px;
+  }
+  main .seccion-informacion {
+    background-size: cover;
   }
   main .seccion-informacion p {
     width: 180px;
